@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הכוח שמעצב את חיינו - הרצאה חיה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Rubik', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(20, 50, 60, 0.85), rgba(20, 50, 60, 0.7)), url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.39);
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.23);
+        }
+        .blob {
+            position: absolute;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white py-20 min-h-[90vh] flex items-center justify-center relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-teal-500/30 border border-teal-400 text-teal-100 text-sm font-semibold mb-6 tracking-wide">
+                הרצאה חיה, מעשית ומטלטלת
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
+                הכוח שמעצב את חיינו – <br>
+                <span class="text-teal-200">וכיצד להפוך אותו למנוע של שינוי אמיתי</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                הרצאה שתעזור לך להבין סוף-סוף למה דברים נתקעים, ואיך לפרוץ קדימה בצורה שמחזיקה לאורך זמן.
+            </p>
+            <a href="#register" class="cta-btn bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-full text-lg inline-flex items-center gap-2">
+                אני רוצה להירשם עכשיו
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Problem / Intro Section -->
+    <section class="py-20 bg-white relative">
+        <div class="container mx-auto px-6 max-w-3xl text-center md:text-right">
+            <h2 class="text-3xl font-bold text-teal-900 mb-8 text-center">במשך שנים אנחנו מנסות להשתנות...</h2>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>
+                    לרדת מההרגלים שמפריעים לנו, להחזיר אנרגיה לגוף ולנפש, לסדר את הבית, ליצור שגרה חדשה, או לקדם מטרות שחשובות לנו באמת.
+                </p>
+                <p class="font-bold text-teal-800 text-xl">
+                    אבל פעם אחרי פעם — הפער בין הרצון לבין הביצוע נשאר גדול.
+                </p>
+                <p>
+                    וזה לא בגלל חוסר משמעת או "אופי".
+                    <br>
+                    זה בגלל כוח אחד, שקט ועמוק, שמנהל את ההתנהגות שלנו מאחורי הקלעים.
+                </p>
+                <p class="bg-teal-50 p-6 rounded-xl border-r-4 border-teal-500">
+                    <strong>בהרצאה הקרובה נחשוף אותו — ונלמד להשתמש בו לטובתנו.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+                מה מחכה לך בהרצאה?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">להבין את הפער</h3>
+                    <p class="text-gray-600">
+                        למה אנחנו עושות דברים מסוימים — ולא מצליחות לעשות אחרים? תגלי מה באמת מניע התנהגות, ואיך משתמשים בזה לשינוי שאפשר להתמיד בו.
+                    </p>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">כלי לחיזוק הרצון</h3>
+                    <p class="text-gray-600">
+                        איך בונים מוטיבציה חדשה גם בגיל 50+, ואיך מחזקים יכולת התמדה בלי מאבקי כוח פנימיים.
+                    </p>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">דוגמאות מהחיים</h3>
+                    <p class="text-gray-600">
+                        דחיינות בבדיקות רפואיות, סדר בבית, שימוש בטכנולוגיה, יצירת שגרה אחרי פרישה, ניהול עומס נפשי ועוד.
+                    </p>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">תנועה גדולה</h3>
+                    <p class="text-gray-600">
+                        תובנות קצרות וכלים פרקטיים שתוכלי ליישם כבר באותו ערב ליצירת שינוי מיידי.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <div class="inline-flex items-center bg-blue-50 text-blue-800 px-6 py-3 rounded-full border border-blue-200">
+                    <i class="fas fa-video ml-3"></i>
+                    <span><strong>בונוס:</strong> ההקלטה תישלח אליך לצפייה ללא הגבלה גם אם לא תוכלי להגיע לשידור החי.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-teal-900 text-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">למי ההרצאה מתאימה?</h2>
+            <div class="space-y-4 text-lg">
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-check-circle text-yellow-400 mt-1 flex-shrink-0"></i>
+                    <p>לכל מי שמרגישה שעשתה "מספיק התחלות" ורוצה סוף-סוף שינוי שמחזיק.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-check-circle text-yellow-400 mt-1 flex-shrink-0"></i>
+                    <p>למי שמרגישה שהזמן חולף — ורוצה לבחור את השנים הבאות במודע.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-check-circle text-yellow-400 mt-1 flex-shrink-0"></i>
+                    <p>למי שרוצה סדר, בהירות ושליטה טובה יותר בחיים.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-check-circle text-yellow-400 mt-1 flex-shrink-0"></i>
+                    <p>למי שהבריאות, הבית, השגרה או ההתנהלות היומיומית חשובים לה.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-check-circle text-yellow-400 mt-1 flex-shrink-0"></i>
+                    <p class="font-bold">למי שמאמינה שהגיל לא מגביל — אלא פותח הזדמנות חדשה.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes / Benefits -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">עם מה תצאי מההרצאה?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-4">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-2">בהירות</h3>
+                    <p class="text-sm text-gray-600">להבין מה באמת מעכב, ומה באמת מניע קדימה.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-2">שליטה</h3>
+                    <p class="text-sm text-gray-600">להפסיק לתת לכאב ולעונג לנהל אותנו — ולהתחיל להוביל.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl mb-4">🦁</div>
+                    <h3 class="text-xl font-bold mb-2">אומץ</h3>
+                    <p class="text-sm text-gray-600">לשחרר הרגלים ישנים ולהתחיל צעדים קטנים שמחזקים מבפנים.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="text-xl font-bold mb-2">כלים</h3>
+                    <p class="text-sm text-gray-600">תרגילים פרקטיים ופשוטים שניתן ליישם לבד בבית.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics & Registration -->
+    <section id="register" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="p-8 md:p-12 text-center">
+                    <h2 class="text-3xl font-bold text-teal-800 mb-8">שרייני את מקומך בהרצאה</h2>
+                    
+                    <div class="flex flex-col md:flex-row justify-center gap-6 mb-10 text-lg">
+                        <div class="flex flex-col items-center bg-teal-50 p-4 rounded-xl min-w-[140px]">
+                            <i class="far fa-calendar-alt text-2xl text-teal-600 mb-2"></i>
+                            <span class="font-bold">10/12</span>
+                            <span class="text-sm text-gray-500">יום שלישי</span>
+                        </div>
+                        <div class="flex flex-col items-center bg-teal-50 p-4 rounded-xl min-w-[140px]">
+                            <i class="far fa-clock text-2xl text-teal-600 mb-2"></i>
+                            <span class="font-bold">20:00</span> <!-- Placeholder used as requested -->
+                            <span class="text-sm text-gray-500">זמן ישראל</span>
+                        </div>
+                        <div class="flex flex-col items-center bg-teal-50 p-4 rounded-xl min-w-[140px]">
+                            <i class="fas fa-video text-2xl text-teal-600 mb-2"></i>
+                            <span class="font-bold">שידור חי</span>
+                            <span class="text-sm text-gray-500">בזום / אונליין</span>
+                        </div>
+                         <div class="flex flex-col items-center bg-yellow-50 p-4 rounded-xl min-w-[140px] border border-yellow-200">
+                            <i class="fas fa-ticket-alt text-2xl text-yellow-600 mb-2"></i>
+                            <span class="font-bold">50 ₪</span> <!-- Placeholder -->
+                            <span class="text-sm text-gray-500">דמי הרשמה</span>
+                        </div>
+                    </div>
+
+                    <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('הטופס נשלח בהצלחה! (זוהי הדגמה)');">
+                        <input type="text" placeholder="שם מלא" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500" required>
+                        <input type="email" placeholder="כתובת אימייל" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500" required>
+                        <input type="tel" placeholder="מספר טלפון" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500" required>
+                        
+                        <button type="submit" class="w-full cta-btn bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-4 rounded-lg text-xl shadow-lg mt-4">
+                            אני נרשמת להרצאה!
+                        </button>
+                        <p class="text-xs text-gray-500 mt-2">* הקלטה תישלח לכל הנרשמות</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Motivational CTA -->
+    <section class="py-20 bg-teal-800 text-white text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <p class="text-xl mb-6 opacity-90">בכל פעם שהרגשת שאת רוצה שינוי ולא מצליחה להתקדם — זה לא היה בגללך.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                ברגע שתביני את הכוח שמנהל אותך מבפנים,<br>
+                תגלי כמה את יכולה לזוז ולהרגיש חזקה.
+            </h2>
+            <p class="mb-10 text-lg">זה הזמן להצטרף להרצאה שתעשה לך סדר ותפתח לך דרך חדשה.</p>
+            <a href="#register" class="inline-block bg-white text-teal-900 hover:bg-gray-100 font-bold py-4 px-12 rounded-full text-lg shadow-lg transition-transform hover:scale-105">
+                שרייני את מקומך עכשיו
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-teal-950 text-teal-400 py-8 text-center text-sm">
+        <div class="container mx-auto">
+            <p>© 2025 כל הזכויות שמורות. נבנה באהבה לשינוי וצמיחה.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
